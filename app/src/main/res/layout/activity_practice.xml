@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PracticeActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginRight="@dimen/_19sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the mobile number to continue"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_75sdp"/>
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@+id/text"
+        android:layout_margin="@dimen/_10sdp"
+        android:maxLength="10"
+        android:background="@drawable/edittext_bg"
+        />
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_50sdp"
+           android:layout_margin="@dimen/_10sdp"
+           android:layout_below="@id/edit_text"
+           android:background="@drawable/button_bg"
+           android:textAllCaps="false"
+           android:textSize="@dimen/_20ssp"
+           android:text="Get OTP"/>
+</RelativeLayout>
