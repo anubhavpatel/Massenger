@@ -33,6 +33,7 @@
         android:background="@drawable/edittext_bg"
         />
        <Button
+           android:id="@+id/btn"
            android:layout_width="match_parent"
            android:layout_height="@dimen/_50sdp"
            android:layout_margin="@dimen/_10sdp"
@@ -41,4 +42,20 @@
            android:textAllCaps="false"
            android:textSize="@dimen/_20ssp"
            android:text="Get OTP"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_below="@+id/btn"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile"/>
+    <Button
+        android:id="@+id/camBtn"
+        android:layout_below="@id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Cam"
+        />
 </RelativeLayout>
